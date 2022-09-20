@@ -935,8 +935,47 @@ nav {
 
 
 .items__wrapper {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: #f6f5f3;
     width: 100vw;
+}
+
+.product-item h3{
+    font-size: 24px;
+}
+.product-div {
+    position: relative;
+    max-width: 100%;
+}
+
+.chai-superlatte-img__hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.product-div:hover img.chai-superlatte-img__hover {
+    opacity: 1;
+}
+
+.chai-superlatte-img:hover
+
+.chai-superlatte-img:hover {
+    background-image: url(../img/Chai_SQUARElife_compressed_1200x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-div img {
+    border-radius: 20px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -963,6 +1002,10 @@ nav {
         row-gap: 80px;
     }
 
+    .product-div img{
+        max-width: 100%;
+    }
+
     .product-item {
         width: 90% !important;
     }
@@ -980,7 +1023,9 @@ nav {
         row-gap: 80px;
     }
 
-    .product-item {
-        width: 90% !important;
+    .product-div {
+        display: flex;
+        justify-content: center;
     }
+
 }
