@@ -197,6 +197,7 @@ nav {
 .hero img {
     min-width: 100%;
     min-height: 100%;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -267,8 +268,14 @@ nav {
         height: 100vh;
     }
 
+    .featured-product__text button {
+        border: none;
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
     .hero {
-        height: 70vh;
+        height: calc(100vh - 133px)
     }
 
     .hero-text {
@@ -333,6 +340,10 @@ nav {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .hero {
+        height: 90vh;
+    }
+    
     .hero-text {
         width: 80%;
     }
@@ -346,11 +357,18 @@ nav {
     }
 
     .featured-section {
-        height: 80vh;
+        height: 50vh;
     }
 
     .featured-product__text {
         font-size: 20px;
+    }
+
+    .highlights-section {
+        margin-top: 5vh;
+        padding-top: 0px !important;
+        height: 50vh !important;
+        max-height: none !important;
     }
 
 
@@ -371,8 +389,16 @@ nav {
         max-height: 395px;
     }
 
-    .highlight-description h3 {
+    .highlights-section .highlight-description h3 {
         font-size: 24px !important;
+      }
+
+    .highlight-caption {
+        padding-right: 0px !important;
+    }
+
+    .product-card .highlight-description h3 {
+        font-size: 20px !important;
       }
 
 
@@ -489,7 +515,7 @@ nav {
 
 .highlights-section {
     padding-top: 8.5rem;
-    height: 120vh;
+    height: 200vh;
     max-height: 900px;
 }
 
@@ -860,6 +886,21 @@ nav {
     font-weight: 600;
     text-decoration: none;
     color: #453e3c;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer__newsletter {
+        grid-column: 3/17;
+    }
+
+    .main-links {
+        font-size: 38px;
+        line-height: 38px !important;
+    }
+
+    .footer__link-group:nth-child(4) {
+        grid-column: 18/23;
+    }
 }
 
 
