@@ -261,7 +261,7 @@ nav {
 
   /* RESPONSIVE SMALL */
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 767px) {
     .featured-section {
         flex-direction: column;
         height: 100vh;
@@ -294,14 +294,28 @@ nav {
     height: auto;
     }
 
+    .highlight-card-1 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .highlight-card-2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     .highlight-description h3 {
-        font-size: 26px;
+        font-size: 20px !important;
       }
 
       .products-section {
         margin-top: 100px;
         height: auto;
         }
+
+    .highlight-caption {
+        padding-right: 0px !important;
+    }
 
     .products-container {
         flex-direction: column;
@@ -317,7 +331,7 @@ nav {
 
 /* RESPONSIVE MEDIUM */
 
-@media only screen and (min-width: 711px) and (max-width: 1312px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     .hero-text {
         width: 80%;
@@ -350,17 +364,19 @@ nav {
 
 
     .highlight-card-1 {
-        height: 50%;
+        height: 75%;
         width: 100%;
+        max-height: 395px;
     }
 
     .highlight-card-2 {
-        height: 50%;
+        height: 75%;
         width: 100%;
+        max-height: 395px;
     }
 
     .highlight-description h3 {
-        font-size: 32px;
+        font-size: 24px !important;
       }
 
 
@@ -375,7 +391,7 @@ nav {
 
 /* RESPONSIVE LARGE */
 
-@media (min-width: 1313px) {
+@media (min-width: 1024px) {
     
     .hero-text h1{
         font-size: 48px;
@@ -532,8 +548,9 @@ nav {
   .highlight-card-1 {
       display: flex;
       flex-direction: column;
-      justify-content:flex-start;
+      justify-content: center;
       width: 50%;
+      min-height: 300px;
       margin-left: 7rem;
       margin-right: 1rem;
   }
@@ -541,8 +558,9 @@ nav {
   .highlight-card-2 {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content:center;
     width: 50%;
+    min-height: 300px;
     margin-right: 7rem;
     margin-left: 1rem;
 }
