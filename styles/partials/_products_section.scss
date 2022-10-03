@@ -1,0 +1,132 @@
+
+/* RESPONSIVE SMALL */
+
+@media only screen and (max-width: 767px) {
+    .products-section {
+        height: auto;
+        padding-bottom: 5rem !important;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        margin-bottom: 90px;
+    }
+}
+
+/* RESPONSIVE MEDIUM */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .product-card {
+        .highlight-description {
+            h3 {
+                font-size: 20px !important;
+            }
+        }
+    }
+
+    .products-section {
+        margin-bottom: 50px;
+    }
+
+    .product-card {
+        width: 30%;
+    }
+}
+
+/* -------------- */
+
+.products-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.products-container {
+    display:flex;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    justify-content: space-between;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 30%;
+    
+    div {
+        img {
+            width: 100%;
+        }
+    }
+
+    .highlight-description {
+        h3 {
+            font-family: 'Fraunces', serif;
+            font-weight: 300;
+            font-size: 22px;
+            text-decoration: none;
+            color: #453e3c;
+        }
+    }
+
+    .cta-btn {
+        width: 12px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.dirty-chai-img {
+    background-image: url(../img/chaga-chai-organic-chai-concentrate-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+
+    &:hover {
+        background-image: url(../img/chaga-chai-organic-chai-concentrate-bg3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.masala-chai-img {
+    background-image: url(../img/masala-chai-organic-chai-concentrate-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+
+    &:hover {
+        background-image: url(../img/masala-chai-organic-chai-concentrate-bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.masala-rooibos-img {
+    background-image: url(../img/turmeric-ginger-chai-organic-concentrate-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+
+    &:hover {
+        background-image: url(../img/turmeric-ginger-chai-organic-concentrate-bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,0 +1,132 @@
+.hero {
+    display: flex;
+    height: 738px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        }
+}
+
+.hero-mbl {
+    display: none;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    color: #411509;
+    width: 45%;
+    h1{
+        font-size: 48px;
+    }
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 18px 40px;
+        background-color: $defaultButtonColor;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        list-style-type: none;
+        transition: padding 0.5s, background-color 1s;
+        &:hover {
+            background-color: #ffffff;
+          }
+        &:active {
+            padding:25px 48px;
+          }
+      }
+    a {
+        text-decoration: none;
+        color: #411509;
+        transition: color 1s;
+        &:hover {
+            color:#ff3c00;
+          }
+      }
+    p {
+        font-family: 'Fraunces', serif;
+        font-weight: 300;
+        font-size: 48px;
+        padding: 50px
+      }
+    
+}
+
+/* RESPONSIVE SMALL */
+
+@media only screen and (max-width: 560px) {
+    .hero {
+        display: none;
+        height: 90vh;
+    }
+
+    .hero-mbl {
+        display: flex;
+        height: calc(100vh - 133px);
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-text {
+        width: 80%;
+        h1{
+            font-size: 26px;
+        }
+        p {
+            font-size: 26px;
+          }
+    }
+}
+
+/* RESPONSIVE MEDIUM */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .hero {
+        height: 90vh;
+    }
+    
+    .hero-text {
+        width: 80%;
+        h1{
+            font-size: 40px;
+        }
+        p {
+            font-size: 40px;
+        }
+    }
+}
+
+/* RESPONSIVE LARGE */
+
+@media only screen and (min-width: 1024px) {
+    
+    .hero-text {
+        h1{
+            font-size: 48px;
+        }
+        p {
+            font-size: 48px;
+        }
+    }
+}
