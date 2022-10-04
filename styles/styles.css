@@ -1,4 +1,11 @@
-/* Colors */ /* INICIO DE PROMO BANNER */
+/* Colors */
+.footer {
+  border-top: 1px solid #453e3c;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* INICIO DE PROMO BANNER */
 .promo-banner {
   background-color: #D3D2CD;
   color: #8A7A75;
@@ -610,10 +617,7 @@ nav {
 }
 
 .footer {
-  background-color: #E9E7E2;
-  border-top: 1px solid #453e3c;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  background-color: #d3e0ff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
