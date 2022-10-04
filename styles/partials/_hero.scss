@@ -29,7 +29,7 @@
         outline: 0;
         display: inline-block;
         padding: 18px 40px;
-        background-color: $defaultButtonColor;
+        background-color: map-get($colors, primary-default);
         text-align: center;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
@@ -37,10 +37,11 @@
         list-style-type: none;
         transition: padding 0.5s, background-color 1s;
         &:hover {
-            background-color: #ffffff;
+            background-color: map-get($colors, primary-hover);
           }
         &:active {
             padding:25px 48px;
+            background-color: map-get($colors, accent);
           }
       }
     a {

@@ -22,18 +22,7 @@
       height: 100%;
       width: 100%;
       button {
-        border: none;
-        width: 50%;
-        padding: 18px 40px;
-        background-color: $defaultButtonColor;
-        text-align: center;
-        cursor: pointer;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        list-style-type: none;
-        &:hover {
-            background-color: $hoverButtonColor;
-          }
+        @include secondaryButton(#ff3c00, #ff701d, #311e17);
       }
       a {
         text-decoration: none;
