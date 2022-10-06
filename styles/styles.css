@@ -1,3 +1,9 @@
+.footer {
+  border-top: 1px solid #453e3c;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 /* INICIO DE PROMO BANNER */
 .promo-banner {
   background-color: #D3D2CD;
@@ -145,8 +151,7 @@ nav {
 .hero img {
   min-width: 100%;
   min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-mbl {
@@ -165,7 +170,6 @@ nav {
 .hero-text button {
   border: none;
   outline: 0;
-  display: inline-block;
   padding: 18px 40px;
   background-color: #D3D2CD;
   text-align: center;
@@ -176,7 +180,7 @@ nav {
   transition: padding 0.5s, background-color 1s;
 }
 .hero-text button:hover {
-  background-color: #ffffff;
+  background-color: #c0c0bf;
 }
 .hero-text button:active {
   padding: 25px 48px;
@@ -212,8 +216,7 @@ nav {
   .hero-mbl img {
     min-width: 100%;
     min-height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -280,7 +283,7 @@ nav {
 }
 .featured-product button {
   border: none;
-  width: 50%;
+  outline: 0;
   padding: 18px 40px;
   background-color: #D3D2CD;
   text-align: center;
@@ -288,6 +291,8 @@ nav {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   list-style-type: none;
+  transition: padding 0.5s, background-color 1s;
+  width: 50%;
 }
 .featured-product button:hover {
   background-color: #c0c0bf;
@@ -608,9 +613,6 @@ nav {
 
 .footer {
   background-color: #E9E7E2;
-  border-top: 1px solid #453e3c;
-  padding-top: 20px;
-  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -772,15 +774,13 @@ nav {
   }
   .items__col2 {
     grid-column: 3/23;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .items__col3 {
     grid-template-columns: repeat(2, 1fr) !important;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
+    column-gap: 16px;
     grid-column: 2/24;
     row-gap: 80px;
   }
@@ -797,8 +797,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
+    column-gap: 16px;
     grid-column: 2/24;
     row-gap: 80px;
   }
@@ -837,8 +836,7 @@ nav {
   right: 0;
   left: 0;
   bottom: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -878,4 +876,6 @@ main {
 
 .lightweight {
   font-weight: 300;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

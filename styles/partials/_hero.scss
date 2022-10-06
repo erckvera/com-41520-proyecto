@@ -25,20 +25,7 @@
         font-size: 48px;
     }
     button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 18px 40px;
-        background-color: $defaultButtonColor;
-        text-align: center;
-        cursor: pointer;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        list-style-type: none;
-        transition: padding 0.5s, background-color 1s;
-        &:hover {
-            background-color: #ffffff;
-          }
+        @include primaryButton;
         &:active {
             padding:25px 48px;
           }
