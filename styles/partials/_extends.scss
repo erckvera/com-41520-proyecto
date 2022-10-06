@@ -3,3 +3,11 @@
     padding-top: 20px;
     padding-bottom: 40px;
 }
+
+%images {
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}

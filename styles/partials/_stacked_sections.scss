@@ -1,10 +1,10 @@
-.featured-section {
+.main-section {
     display: flex;
     height: 100vh;
     border-bottom: 1px solid #453e3c;
 }
 
-.featured-product__image {
+.image-container {
     min-width: 50%;
     justify-content: center;
     align-items: center;
@@ -12,20 +12,17 @@
     
     img {
       width: 100%;
-      height: auto;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .recipe-img {
-      width: auto;
       height: 100%;
       @extend %images;
     }
+
+    .hz-img {
+      width: auto;
+      height: 100%;
+    }
   }
   
-  .featured-product {
+  .description-container {
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -41,7 +38,7 @@
       }
   }
   
-  .featured-product__text {
+  .description-text {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -56,17 +53,23 @@
 
 @media only screen and (max-width: 767px) {
     
-  .featured-section {
+  .main-section {
     flex-direction: column;
     height: 100vh;
   }
 
-  .featured-product__text {
+  .description-text {
+    margin-left: 0px;
     button {
       border: none;
       width: 100% !important;
       margin-top: 20px;
     }
+    }
+
+    .description-container {
+        align-items: center;
+        order: 1;
     }
 }
 
@@ -74,20 +77,22 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  .featured-section {
-      height: 50vh;
+  .main-section {
+      height: 80vh;
   }
 
-  .featured-product__text {
-      font-size: 20px;
+  .description-text {
+      font-size: 18px;
   }
+
 }
 
 /* RESPONSIVE LARGE */
 
 @media (min-width: 1024px) {
   
-  .featured-product__text {
+  .description-text {
       font-size: 24px;
   }
+
 }
