@@ -33,3 +33,19 @@
     }
     
 }
+
+@mixin formInput {
+    padding: 1em;
+    border-bottom: 1px solid #8A7A75;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+@mixin textArea {
+    margin-top: 2em;
+    padding: 1em;
+    border: none;
+    background-color: #E9E7E2;
+}

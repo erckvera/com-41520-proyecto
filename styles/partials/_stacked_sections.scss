@@ -44,6 +44,13 @@
         text-decoration: none;
         color: #8A7A75;
       }
+      
+      p {
+        background-color: transparent;
+        color: #453e3c;
+        text-decoration: none;
+        font-size: 16px;
+      }
   }
   
   .description-text {
@@ -57,11 +64,100 @@
       padding-bottom: 60px;
   }
 
-  .basic-links {
+  .locations-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 50%;
+    button {
+      @include primaryButton;
+      width: 50%;
+    }
+    a {
+      text-decoration: none;
+      color: #8A7A75;
+    }
+    
+    p {
+      background-color: transparent;
+      color: #453e3c;
+      text-decoration: none;
+      font-size: 16px;
+    }
+}
+
+  .locations-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.map {
+  width: 50%;
+  iframe {
+    width: 100% !important;
+    height: 100%;
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  height: 100%;
+  width: 50%;
+  padding: 6% 10% 5% 10%;
+
+  .form {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    gap: 0.5em;
+    justify-content: center;
+    margin-top: 5%;
+
+    input {
+      @include formInput;
+    }
+
+    textarea {
+      @include textArea;
+      width: 100%;
+      min-height: 10%;
+      resize: none;
+    }
+  }
+
+  .form_check {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5%;
+
+  }
+
+  button {
+    margin-top: 5%;
+    @include primaryButton;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #8A7A75;
+  }
+  
+  p {
     background-color: transparent;
     color: #453e3c;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
 }
 
 /* RESPONSIVE SMALL */
@@ -85,6 +181,30 @@
     .description-container {
         align-items: center;
         order: 1;
+    }
+
+    .locations-container {
+      width: 100%;
+    }
+
+    .locations-text {
+
+      article {
+      flex-direction: column;
+      }
+    }
+
+    .map {
+      width: 100%;
+      min-height: 300px;
+      iframe {
+        width: 100% !important;
+        height: 100%;
+      }
+    }
+
+    .contact-container {
+      width: 100%;
     }
 }
 
