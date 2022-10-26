@@ -28,6 +28,10 @@
       width: auto;
       height: 100%;
     }
+
+    &.img-vertical {
+      width: 50% !important;
+    }
   }
   
   .description-container {
@@ -181,6 +185,13 @@
     .description-container {
         align-items: center;
         order: 1;
+    }
+
+    .image-container {
+     
+      &.img-vertical {
+        width: 100% !important;
+      }
     }
 
     .locations-container {

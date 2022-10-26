@@ -928,6 +928,9 @@ nav {
   width: auto;
   height: 100%;
 }
+.image-container.img-vertical {
+  width: 50% !important;
+}
 
 .description-container {
   display: flex;
@@ -1047,12 +1050,14 @@ nav {
   border-top: none;
   border-left: none;
   border-right: none;
+  border-radius: 0px;
   width: 100%;
 }
 .contact-container .form textarea {
   margin-top: 2em;
   padding: 1em;
   border: none;
+  border-radius: 0px;
   background-color: #E9E7E2;
   width: 100%;
   min-height: 10%;
@@ -1110,6 +1115,9 @@ nav {
   .description-container {
     align-items: center;
     order: 1;
+  }
+  .image-container.img-vertical {
+    width: 100% !important;
   }
   .locations-container {
     width: 100%;
