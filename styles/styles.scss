@@ -25,16 +25,41 @@ body {
 
 h1 {
     font-family: 'Fraunces', serif;
+    font-weight: 600 !important;
 }
 
 h2 {
     font-family: 'Fraunces', serif;
+    font-weight: 600 !important;
     color:#453e3c;
 }
 
 main { 
     display: flex;
     flex-direction: column;
+    a {
+        &:hover {
+            color: #453e3c !important;
+        }
+    }
+    h4 {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        font-family: Inter, sans-serif;
+        color: #453e3c;
+        font-weight: 400; 
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+footer {
+    a {
+        &:hover {
+            color: #453e3c !important;
+        }
+    }
 }
 
 /* GRID SYSTEM */

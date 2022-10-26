@@ -4,6 +4,14 @@
     border-bottom: 1px solid #453e3c;
 }
 
+.locations-group {
+
+  .footer__link {
+      font-family: Inter, serif;
+      font-weight: 400;
+  }
+}
+
 .image-container {
     min-width: 50%;
     justify-content: center;
@@ -48,6 +56,13 @@
       margin-left: 60px;
       padding-bottom: 60px;
   }
+
+  .basic-links {
+    background-color: transparent;
+    color: #453e3c;
+    text-decoration: none;
+    font-size: 16px;
+}
 
 /* RESPONSIVE SMALL */
 
@@ -94,5 +109,15 @@
   .description-text {
       font-size: 24px;
   }
+
+  .locations-group__list {
+    list-style: none;
+    padding: 0;
+
+    ul {
+        margin: 0 0 30px;
+        font-size: 16px;
+    }
+}
 
 }

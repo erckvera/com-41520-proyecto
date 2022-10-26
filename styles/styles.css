@@ -20,12 +20,12 @@
   text-align: center;
   font-size: 12px;
   display: flex;
+  height: 40px;
   width: 100%;
   padding: 8px;
 }
 
 .promo-caption {
-  line-height: 30px;
   width: 97%;
 }
 
@@ -33,7 +33,8 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 3%;
+  width: auto;
+  height: 100%;
 }
 .close-btn:hover {
   transform: scale(1.1);
@@ -46,6 +47,34 @@ nav {
   justify-content: space-between;
   background-color: #193328;
   align-items: center;
+}
+
+/* Navbar Bootstrap */
+.ul-center {
+  display: flex;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+.ul-center a {
+  text-decoration: none;
+  color: #998681;
+}
+.ul-center a:hover {
+  color: #D3D2CD;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(155,134,129,100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: #998681;
+}
+
+.navbar-logo {
+  width: 12.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .burger-icon {
@@ -862,6 +891,11 @@ nav {
   border-bottom: 1px solid #453e3c;
 }
 
+.locations-group .footer__link {
+  font-family: Inter, serif;
+  font-weight: 400;
+}
+
 .image-container {
   min-width: 50%;
   justify-content: center;
@@ -916,6 +950,13 @@ nav {
   padding-bottom: 60px;
 }
 
+.basic-links {
+  background-color: transparent;
+  color: #453e3c;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 /* RESPONSIVE SMALL */
 @media only screen and (max-width: 767px) {
   .main-section {
@@ -949,6 +990,14 @@ nav {
   .description-text {
     font-size: 24px;
   }
+  .locations-group__list {
+    list-style: none;
+    padding: 0;
+  }
+  .locations-group__list ul {
+    margin: 0 0 30px;
+    font-size: 16px;
+  }
 }
 * {
   padding: 0;
@@ -964,16 +1013,35 @@ body {
 
 h1 {
   font-family: "Fraunces", serif;
+  font-weight: 600 !important;
 }
 
 h2 {
   font-family: "Fraunces", serif;
+  font-weight: 600 !important;
   color: #453e3c;
 }
 
 main {
   display: flex;
   flex-direction: column;
+}
+main a:hover {
+  color: #453e3c !important;
+}
+main h4 {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  font-family: Inter, sans-serif;
+  color: #453e3c;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+footer a:hover {
+  color: #453e3c !important;
 }
 
 /* GRID SYSTEM */
