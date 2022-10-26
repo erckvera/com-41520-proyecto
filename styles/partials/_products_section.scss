@@ -18,6 +18,9 @@
     .product-card {
         width: 100% !important;
         margin-bottom: 90px;
+        strong {
+            font-weight: 600;
+        }
     }
 }
 

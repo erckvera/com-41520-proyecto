@@ -25,6 +25,9 @@
         h3 {
             font-size: 20px !important;
         }
+        strong {
+            font-weight: 600;
+        }
     }
 
     .highlight-caption {
@@ -158,6 +161,9 @@
             
             h3 {
                 font-size: 24px !important;
+                strong {
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -190,6 +196,9 @@
     .highlight-description {
         h3 {
             font-size: 32px;
+            strong {
+                font-weight: 600;
+            }
         }
     }
 }
